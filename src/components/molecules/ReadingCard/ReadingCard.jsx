@@ -3,8 +3,8 @@ import styles from "./reading-card.module.css";
 import { useState } from "react";
 import apiReading from "../../../services/apiReading.jsx";
 import { useNavigate } from "react-router";
-import CheckButton from "../../atoms/checkButton/CheckButton.jsx";
-import DeleteButton from "../deleteButton/DeleteButton.jsx";
+import CheckButton from "../../atoms/CheckButton/CheckButton.jsx";
+import DeleteButton from "../DeleteButton/DeleteButton.jsx";
 
 const ReadingCard = ({data, onDelete}) =>{
     const [isEditing, setIsEditing] = useState(false);
