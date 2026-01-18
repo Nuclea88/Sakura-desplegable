@@ -12,7 +12,7 @@ const apiReading=()=>{
 };
         
     const editName = async (id,name) => {
-        const response = await axios.patch(`${url}/${id}`, { name });
+        const response = await axios.put(`${url}/${id}`, { name });
         return response.data;
     }
 
