@@ -4,7 +4,7 @@ import ReadingCard from "../../molecules/ReadingCard/ReadingCard";
 import styles from "./history-cards.module.css"
 import Button from "../../atoms/Button/Button";
 import DropButton from "../../molecules/DropButton/DropButton";
-import momo from "../../../assets/images/Momo.png";
+import momo from "../../../assets/images/Momo.jpg";
 
 const HistoryCards = ({userId}) => {
     const [reading,setReading]= useState([]);
