@@ -1,0 +1,38 @@
+.cardContainer {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;          
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;           
+}
+
+.nameRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;   
+    padding-bottom: 25px;         
+}
+.editInput{
+    border: 1px solid border-soft;
+    margin-left: 60px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem;       
+    font-family: inherit;  
+    background-color: cream-white;
+    width: 150px;         
+    outline: none;        
+    transition: all 0.2s ease;
+
+}
+
+.img_card{
+    cursor: pointer;
+}

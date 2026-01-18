@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-sky-blue: #e6f7ff;
+  --color-sakura-pink: #f9e6f1;
+  --color-petal-yellow: #f3f7d9;
+
+  --color-star-yellow: #fff1b8;
+  --color-magic-pink: #ffd6e7;
+  --color-mint-glow: #e7f5f0;
+
+  --color-cream-white: rgba(255, 255, 255, 0.8);
+  --color-border-soft: rgba(0, 0, 0, 0.1);
+  --color-shadow-soft: rgba(0, 0, 0, 0.05);
+
+  --font-primary: 'Poppins', system-ui, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --transition-soft: all 0.3s ease;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    var(--color-sky-blue),
+    var(--color-sakura-pink),
+    var(--color-petal-yellow)
+  );
+  color: #222;
+  min-height: 100vh;
+  font-family: 'Poppins',Arial, Helvetica, sans-serif;
+  position:relative;
+}
+
+.sakura{
+  display: none;
+}
+
+
+@media (min-width:1200px){
+.sakura{
+    position: absolute;
+    right:0;
+    bottom:0;
+    display: block;
+    z-index:-1;
+}
+}
