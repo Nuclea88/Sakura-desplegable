@@ -5,6 +5,7 @@ import apiReading from "../../../services/apiReading.jsx";
 import { useNavigate } from "react-router";
 import CheckButton from "../../atoms/CheckButton/CheckButton.jsx";
 import DeleteButton from "../DeleteButton/DeleteButton.jsx";
+import historial from "../../../assets/images/historial.png";
 
 const ReadingCard = ({data, onDelete}) =>{
     const [isEditing, setIsEditing] = useState(false);
@@ -43,7 +44,7 @@ const navigate = useNavigate();
 
     return( 
        <div className={styles.cardContainer}>
-            <img src="src/assets/images/historial.png" alt="icono Historial" onClick={handleButtonClick} className={styles.img_card} title="Cartas guardadas"/>
+            <img src={historial} alt="icono Historial" onClick={handleButtonClick} className={styles.img_card} title="Cartas guardadas"/>
             <p>{data.date}</p>
             <div className={styles.nameRow}>
                 {isEditing ? (

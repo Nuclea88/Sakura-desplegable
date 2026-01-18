@@ -64,7 +64,6 @@ const handleSave = async () => {
 
   const dataReading = {
     userId: user?.id,
-    id: crypto.randomUUID(),
     date: savedDate,
     name: readingName,
     pastCardId: past.id,

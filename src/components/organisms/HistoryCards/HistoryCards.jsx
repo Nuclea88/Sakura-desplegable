@@ -4,6 +4,7 @@ import ReadingCard from "../../molecules/ReadingCard/ReadingCard";
 import styles from "./history-cards.module.css"
 import Button from "../../atoms/Button/Button";
 import DropButton from "../../molecules/DropButton/DropButton";
+import momo from "../../../assets/images/Momo.png";
 
 const HistoryCards = ({userId}) => {
     const [reading,setReading]= useState([]);
@@ -36,7 +37,7 @@ return(
     </section>
     ):(
          <section className= {styles.no_cards}>
-            <img className={styles.img_no_cards} src="/src/assets/images/Momo.jpg" alt="Relax"/>
+            <img className={styles.img_no_cards} src={momo} alt="Relax"/>
             <p> No hay lecturas guardadas. Revela ahora tu destino.</p>
             <Button BtnClass="subm_btn" path="/readings" text= "Inicio" />
          </section>

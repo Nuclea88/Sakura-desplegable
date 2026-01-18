@@ -2,7 +2,7 @@ import axios from "axios";
 
 const apiSave=()=>{
 
-    const url="http://localhost:3000/readings";
+    const url="https://696cbaecf4a79b31517fa5ea.mockapi.io/api/v1/readings";
 
     const getSave = async () => {
         try{
