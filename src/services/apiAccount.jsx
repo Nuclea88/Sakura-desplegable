@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiAccount=()=>{
-    const url="http://localhost:3000/accounts";
+    const url="https://696cbaecf4a79b31517fa5ea.mockapi.io/api/v1/accounts";
 
     const getAccount = async () => {
         try{

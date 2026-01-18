@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiReading=()=>{
-    const url="http://localhost:3000/readings";
+    const url="https://696cbaecf4a79b31517fa5ea.mockapi.io/api/v1/readings";
 
     const getByUserId = async (userId) => {
         const response = await axios.get(`${url}?userId=${userId}`);
